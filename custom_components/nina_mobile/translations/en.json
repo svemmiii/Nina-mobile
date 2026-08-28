@@ -1,0 +1,26 @@
+{
+  "title": "NINA Mobile",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up NINA Mobile",
+        "description": "Select a GPS-based device_tracker. NINA Mobile uses its position to determine the current warning district automatically.",
+        "data": {
+          "tracker_entity_id": "GPS location",
+          "message_slots": "Number of warning slots"
+        },
+        "data_description": {
+          "tracker_entity_id": "The device_tracker must expose latitude and longitude attributes.",
+          "message_slots": "Stable warning slots. Existing warning IDs remain in the same slot whenever possible."
+        }
+      }
+    },
+    "error": {
+      "tracker_not_found": "The selected device_tracker was not found.",
+      "tracker_without_gps": "The selected device_tracker does not expose latitude/longitude attributes."
+    },
+    "abort": {
+      "already_configured": "This device_tracker is already configured for NINA Mobile."
+    }
+  }
+}

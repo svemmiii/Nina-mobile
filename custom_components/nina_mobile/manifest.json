@@ -1,0 +1,13 @@
+{
+  "codeowners": ["@svemmiii"],
+  "config_flow": true,
+  "documentation": "https://github.com/svemmiii/nina-mobile",
+  "domain": "nina_mobile",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/svemmiii/nina-mobile/issues",
+  "loggers": ["pynina"],
+  "name": "NINA Mobile",
+  "requirements": ["pynina==1.0.2"],
+  "version": "0.1.0"
+}
